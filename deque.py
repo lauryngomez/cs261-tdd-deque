@@ -20,3 +20,7 @@ class Deque:
 
     def dequeue_right(self):
         return self.data.popright()
+
+    def is_empty(self):
+        if self.data.size == 0:
+            return True
