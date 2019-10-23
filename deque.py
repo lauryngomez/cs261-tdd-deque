@@ -1,10 +1,16 @@
 # Deque: A deque.
 # Your implementation should pass the tests in test_deque.py.
-# YOUR NAME
+# LAURYN GOMEZ
 
 # Hint: pip3 install llist
-# from llist import dllist
+from pyllist import dllist
 
 class Deque:
+    def __init__ (self):
+        self.data = dllist([])
 
-    pass
+    def enqueue_left(self, value):
+        self.data.appendleft(value)
+    
+    def enqueue_right(self, value):
+        self.data.appendright(value)
